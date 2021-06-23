@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных пользователей</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+          integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row game-card align-items-center">
+        <div class="col col-md-6 offset-md-3">
+            <div class="card text-center">
+                <div class="card-header">
+                    <p class="m-0">Окно результатов генерации</p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col name">
+                            <h3 class="card-title"><span id="surNameOutput">Генерация фамилии</span></h3>
+                            <h4><span id="firstNameOutput">Генерация имени</span></h4>
+                            <h4><span id="patronymicOutput">Генерация отчества</span></h4>
+                        </div>    
+                        <div class="col birth">
+                            <div class="row">
+                                <div class="col">
+                                    <span id="genderOutput">Генерация пола</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span id="birthDayOutput">День </span>
+                                    <span id="birthMonthOutput">Месяц </span>
+                                    <span id="birthYearOutput">Год рождения</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col prof">
+                            <h5>Профессия: <span id="professionOutput">Генерация профессии</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-button">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-link" id="btnGenerate" style="vertical-align:middle"><span>Сгенерировать</span></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-link" id="btnClear">Очистить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="personGenerator.js"></script>
+<script src="init.js"></script>
+</body>
+</html>
